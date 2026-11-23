@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Fair Game — a novel by Sterling Cross</title>
+<style>
+  :root {
+    --bg: #0b1115;
+    --bg-panel: #10181d;
+    --teal: #1c3b3f;
+    --amber: #c99a53;
+    --off-white: #ece6d8;
+    --muted: #9fb0ab;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--off-white);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+    background: radial-gradient(ellipse at top, var(--teal) 0%, var(--bg) 70%);
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    letter-spacing: 0.08em;
+    margin: 0 0 0.5rem;
+    color: var(--off-white);
+    font-weight: 700;
+  }
+  .hero .tagline {
+    font-style: italic;
+    color: var(--amber);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero .author {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .cover-slot {
+    position: relative;
+    width: 220px;
+    aspect-ratio: 1.6 / 2.56;
+    margin: 2rem auto;
+    background: var(--bg-panel);
+    border: 1px solid var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .cover-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .buy-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.9rem 2.2rem;
+    background: var(--amber);
+    color: #1a1208;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  .buy-btn:hover { background: #e0b36a; }
+  .copy {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  .copy p { margin: 0 0 1.2rem; color: var(--off-white); }
+  .copy .hook { color: var(--amber); font-style: italic; font-size: 1.1rem; }
+  footer {
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="cover-slot" id="coverSlot">
+    cover art goes here<br>(drop image in as cover.jpg)
+    <img src="cover.jpg" alt="All Fair Game cover"
+         style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;"
+         onerror="this.style.display='none'">
+  </div>
+  <h1>ALL FAIR GAME</h1>
+  <div class="tagline">Some men hunt for the table.</div>
+  <div class="author">a novel by Sterling Cross</div>
+  <a class="buy-btn" href="https://books2read.com/u/3LeZM1" target="_blank" rel="noopener">Get the book</a>
+</div>
+
+<div class="copy">
+  <p class="hook">Every man in Colter's Fork has an opinion on the hunters who go missing. Only one has weighed them.</p>
+  <p>Montana, the first cold week of elk season. A retired road-crew man fails to call his daughter. A hitchhiker is last seen on Highway 2. The sheriff calls it exposure, accident, bad luck.</p>
+  <p>Rookie deputy Scott Larson, nobody's idea of a detective, keeps a black notebook anyway, and the notebook keeps finding the same quiet man: Tebah Dunmore, the town's butcher. Polite. Punctual. Exact to the ounce. The man who squares every knife on the towel. The man who has placed in every cook-off he's ever entered, and who cannot stand to see a thing out of place.</p>
+  <p>Scott has a theory nobody wants to hear, a sheriff guarding a secret of his own, and a killer who always finishes what he starts.</p>
+  <p style="text-align:center; margin-top:2rem;"><a class="buy-btn" href="https://books2read.com/u/3LeZM1" target="_blank" rel="noopener">Read All Fair Game</a></p>
+</div>
+
+<footer>All Fair Game &mdash; Sterling Cross</footer>
+
+</body>
+</html>
